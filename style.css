@@ -90,10 +90,6 @@ img{
         height:100px;
     }
 
-    .choice:hover{
-    background-color: rgb(212, 163, 115);
-    cursor: pointer;
-    }
 
     .score-board {
         font-size:1.5rem;
@@ -128,13 +124,8 @@ img{
     }
 
     .choice {
-        width:145px;
-        height:145px;
-    }
-
-    .choice:hover{
-    background-color: rgb(212, 163, 115);
-    cursor: pointer;
+        width: 50px;
+        height:50px;
     }
 
     .score-board {

@@ -58,14 +58,94 @@ img{
 
 .msg-container{
       margin-top: 5rem;
+      text-align: center;
 }
 
 #msg{
     background-color: #081b31;
     color: rgb(212, 163, 115);
     font-size: 2rem;
-    display: inline;
+    display: inline-block;
     padding: 1rem;
     border-radius: 5px;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
 
+}
+
+@media screen and (max-width:398px) {
+    .choices {
+        overflow-x:hidden;
+        font-size:2.3em;
+        gap:2rem;
+    }
+
+    img {
+        width:5rem;
+        height:5rem;
+    }
+
+    .choice {
+        width:100px;
+        height:100px;
+    }
+
+    .choice:hover{
+    background-color: rgb(212, 163, 115);
+    cursor: pointer;
+    }
+
+    .score-board {
+        font-size:1.5rem;
+    }
+  
+    .msg-container {
+        max-width:90%;
+        height:auto;
+        box-sizing:border-box;
+        padding:10px;
+        text-align:center;
+        margin:2rem auto;
+    }
+
+    #msg {
+        font-size:1.5em;
+        
+    }
+}
+
+@media screen and (min-width:399px) and (max-width:768px) 
+{
+    .choices {
+        overflow-x:hidden;
+        font-size:2.3em;
+        gap:2.5rem;
+    }
+
+    img {
+        width:7rem;
+        height:7rem;
+    }
+
+    .choice {
+        width:145px;
+        height:145px;
+    }
+
+    .choice:hover{
+    background-color: rgb(212, 163, 115);
+    cursor: pointer;
+    }
+
+    .score-board {
+        font-size:1.4rem;
+    }
+
+    .msg-container {
+     margin:2rem auto;
+    }
+
+    #msg {
+        font-size:1.5rem;
+    }
 }
